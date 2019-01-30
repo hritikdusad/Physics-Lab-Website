@@ -11,6 +11,9 @@
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="js/scroll_to_top.js"></script>
+        <script type="text/javascript" src="js/check/check6.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="path/to/sweet-alert.css" />
     </head>
 
     <body>
@@ -35,48 +38,43 @@
         </div> 
 
         <!--------HEADER---------->
-
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="row">                   
                     <ul class="nav navbar-nav">
                        <li><a href="index.html">HOME</a></li>
-                       <li><a href="#">ABOUT</a></li>
+                       <li><a href="about.html">ABOUT</a></li>
                        <li id="experiments" class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPERIMENTS <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-                                <li><a href="semiconductor.html">3. Measurement of band gap of semiconductor</a></li>
-                                <li><a href="refractive.html">4. Refractive index of glass with prism</a></li>
-                                <li><a href="rings.html">5. Wavelength of Sodium light with Newton's Rings</a></li>
-                                <li><a href="coil.html">6. Helmholtz coil</a></li>
-                                <li><a href="induction.html">7. Electromagnetic Induction</a></li>
-                                <li><a href="waves.html">8. Mechanical waves</a></li>
-                                <li><a href="diffraction.html">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="grating.html">10. Diffraction grating</a></li>
+                                <li><a href="bar_pendulum.html" >2. Acc. due to gravity by bar pendulum</a></li>
+                                <li><a href="coil.html">3. Helmholtz coil</a></li>
+                                <li><a href="semiconductor.html">4. Measurement of band gap of semiconductor</a></li>
+                                <li><a href="refractive.html">5. Refractive index of glass with prism</a></li>
+                                <li><a href="rings.html">6. Wavelength of Sodium light with Newton's Rings</a></li>
+                                <li><a href="gyroscope.html">7. Gyroscope</a></li>
+                                <li><a href="induction.html">8. Electromagnetic Induction</a></li>
+                                <li><a href="waves.html">9. Mechanical waves</a></li>
+                                <li><a href="diffraction.html">10. Fraunhoffer Diffraction</a></li>
+                                <li><a href="grating.html">11. Diffraction grating</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">PEOPLE</a></li>
-                        <li><a href="#">FACILITIES</a></li>
-                        <li id="videos" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">VIDEOS<span class="caret"></span></a>
+                        <li id="people" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PEOPLE <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-                                <li><a href="semiconductor.html">3. Band gap of semiconductor</a></li>
-                                <li><a href="">4. Refractive index of glass with prism</a></li>
-                                <li><a href="">5. λ of Sodium light with Newton's Rings</a></li>
-                                <li><a href="">6. Helmholtz coil</a></li>
-                                <li><a href="">7. Electromagnetic Induction</a></li>
-                                <li><a href="">8. Mechanical waves</a></li>
-                                <li><a href="">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="">10. Diffraction grating</a></li>
+                                <li><a href="faculty.html">Faculty / Staff</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li id="facilities" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">FACILITIES <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="comp_facilities.html" >Research Computational Facilities</a></li>
+                                <li><a href="exp_facilities.html">Experimental Facilities</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="videos.html">VIDEOS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
-        </nav><!--end of nav bar-->
+        </nav>
 
         <div class="container-fluid">
             <div class="col-md-12 row">
@@ -141,7 +139,7 @@
                                 <p>2. by division of amplitude, that is by separating the amplitude of single wave and
                                         reuniting them.</p>
                                 <p>In the case of Newton’s ring interference is due to division of amplitude.</p>
-                                <p align="center"><img src="resources/images/e5/5.1.jpg"></p>
+                                <p align="center"><img src="resources/images/e5/5.1.jpg" style="width: 30%;"></p>
                                 <p align="center">Figure 6.1: Experimental setup of Newton’s ring</p>
                                 <p>When light is incident on a thin film (thickness of the order of wave length of the incident 
                                     light), it suffers partial reflection and partial transmission at both upper as well as lower surfaces of the thin film. The transmitted light ray again suffers reflection at the lower surface. Interference occurs between the rays in the reflected and transmitted parts.</p>
@@ -159,7 +157,7 @@
                                 <p>For a wedge-shaped thin film, the path difference between the rays BE and CF is
                                     given by</p>(6.6)
                                 <p align="center">δ = 2μt cosα</p>
-                                <p align="center"><img src="resources/images/e5/5.2.jpg"></p>
+                                <p align="center"><img src="resources/images/e5/5.2.jpg" style="width: 50%;"></p>
                                 <p>Where t is the thickness of the film at B (or at D) and α is the angle of refraction at B.
                                     Since the angle of incidence is almost normal, we can assume cosα ~ 1. Note that here we ignore the reflections from top of the plano-convex lens and bottom of the plane circular glass plate since these reflections just contribute to the overall glare. The reflections of interest are only those involving the surfaces in contact.</p>
                                 <p>Now by Stoke’s law, there is no phase change at the glass-air interface of the convex
@@ -184,7 +182,7 @@
                                     <p align="center"> Dn = diameter of the nth ring,</p>
                                     <p align="center">  R = radius of curvature of the plano-convex lens</p>
 
-                                     <p align="center"><img src="resources/images/e5/5.3.jpg"></p>
+                                     <p align="center"><img src="resources/images/e5/5.3.jpg" style="width: 50%;"></p>
                                      <p>In practice, it is not possible to find the exact centre of the bull’s eye in order to
                                         obtain rn. Rather, the traveling microscope can measure an approximate diameter Dn for
                                         the interference ring. Therefore, substituting the value of t from Eq. 6.9, we obtain the
@@ -224,7 +222,7 @@
                                 <p>9. There are two type of movements provided in the microscope, coarse and fine. Align
                                     the microscope tube, with the help of coarse movement knob nos. 2 and 4 as shown in Fig. 6.6, to bring it over the glass plate P'.</p>
 
-                                 <p align="center"><img src="resources/images/e5/5.4.jpg"></p>
+                                 <p align="center"><img src="resources/images/e5/5.4.jpg" style="width: 20%;"></p>
                                  <p align="center">Figure 6.6: Experimental setup of Newton’s ring showing the screws</p>
                                  <p>10. Now move the microscope tube with the help of fine movement knob no. 3 close to
                                         the plate P' to obtain clear image of surface. Slowly move towards upward direction.
@@ -240,7 +238,7 @@
                                 <p>14. Keep sliding the microscope to the right and again note the readings when the vertical
                                         cross-wire lies tangentially at the 4th, 8th, 12th, 16th and 20th rings respectively.</p>
 
-                                <p align="center"><img src="resources/images/e5/5.5.jpg"></p>
+                                <p align="center"><img src="resources/images/e5/5.5.jpg" style="width: 40%;"></p>
                                 <p align="center">Table 6.1: Table for measurement of the diameter of the dark rings. MSR - Main 
                                         scale reading, CSR - Circular scale reading.</p>
                                 <p>15. The radius of curvature (R) of the plano-convex lens is 100 cm which can be calculated
@@ -264,20 +262,86 @@
 
                             <div id="menu2" class="tab-pane fade">
                               <h3>VIDEO</h3>
-                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                              <p align="center" style="height: 200px">CURRENTLY NOT AVAILABLE<br>
+                              <img src="resources/images/sad_emoji.png" style="height: 100px"></p>
+                              <!--p align="center"><iframe width="500vw" height="280vh" src="https://www.youtube-nocookie.com/embed/Ltz6a1N9HIA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+                              <p align="center">
+                                <iframe width="500vw" height="280vh" src="https://www.youtube-nocookie.com/embed/FTQLOYHGf-U?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>   
+                              </p>
+                              <p align="center">
+                                  <iframe width="500vw" height="280vh" src="https://www.youtube-nocookie.com/embed/iZGHapIoqOw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </p--><br>
                             </div>
                             <div id="menu3" class="tab-pane fade">
                               <h3>RESOURCES</h3>
-                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                              <p><b>1. <a href="https://emanualz.wordpress.com/to-determine-wavelength-of-sodium-light-using-newtons-rings/" target="_blank">https://emanualz.wordpress.com/to-determine-wavelength-of-sodium-light-using-newtons-rings/</a><br><br>
+                                2. <a href="https://www.kullabs.com/classes/subjects/units/lessons/notes/note-detail/1729" target="_blank">https://www.kullabs.com/classes/subjects/units/lessons/notes/note-detail/1729</a><br><br>
+                                3. <a href="https://en.wikipedia.org/wiki/Newton%27s_rings" target="_blank">Newtons Rings</a><br><br>
+                                4. <a href="www.citycollegiate.com/newtons_rings.htm" target="_blank">Explanation of and expression for Newton's rings</a></b></p>
                             </div>
                             <div id="menu4" class="tab-pane fade">
                               <h3>VIVA VOCE</h3>
-                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                             <p id="quiz_heading">-Check Yourself-</p>
+                              
+                                <form id="quiz" name="quiz">
+                                  <p><b>1. The formation of maximum intensities at some points and minimum intensities at the other due to the superposition of _________two coherent light waves.</b></p>
+                                  <input type="radio" id="ab" name="question1" value="a"> <label>Two coherent light waves</label><br>
+                                  <input type="radio" id="ab" name="question1" value="b"> <label>Two independent light waves</label><br>
+                                  <input type="radio" id="ab" name="question1" value="c"> <label>Two light waves with same wavelength</label><br>
+                                  <input type="radio" id="ab" name="question1" value="d"> <label>Any two light waves </label><br>
+                                  <div id="answer1" style="visibility: hidden;"> </div><br><br>
+                                  <p><b>2. For interference two waves must be of the </b></p>
+                                  <input type="radio" id="ab" name="question2" value="a"> <label>Different frequencies</label><br>
+                                  <input type="radio" id="ab" name="question2" value="b"> <label>Same frequencies</label><br>
+                                  <input type="radio" id="ab" name="question2" value="c"> <label>Same frequencies and constant phase difference</label><br>
+                                  <input type="radio" id="ab" name="question2" value="d"> <label>Different frequencies and constant phase difference</label><br>
+                                  <div id="answer2" style="visibility: hidden;"> </div><br><br>
+                                  <p><b>3.  For constructive interference Φ =</b></p>
+                                  <input type="radio" id="ab" name="question3" value="a"> <label>nπ </label><br>
+                                  <input type="radio" id="ab" name="question3" value="b"> <label>2nπ</label><br>
+                                  <input type="radio" id="ab" name="question3" value="c"> <label>(2n + 1)π</label><br>
+                                  <input type="radio" id="ab" name="question3" value="d"> <label>None of the above</label><br>
+                                  <div id="answer3" style="visibility: hidden;"> </div><br><br>
+                                  <p><b>4.  When light is incident on a thin film (thickness of the order of wave length of the incident light), it suffers partial reflection and partial transmission at</b></p>
+                                  <input type="radio" id="ab" name="question4" value="a"> <label>Upper surface </label><br>
+                                  <input type="radio" id="ab" name="question4" value="b"> <label>Lower surface</label><br>
+                                  <input type="radio" id="ab" name="question4" value="c"> <label> Both upper and lower</label><br>
+                                  <input type="radio" id="ab" name="question4" value="d"> <label>None of the above</label><br>
+                                  <div id="answer4" style="visibility: hidden;"> </div><br><br>
+                                  <p><b>5.  The transmitted light ray again suffers _________ at lower surface.</b></p>
+                                  <input type="radio" id="ab" name="question5" value="a"> <label> Reflection</label><br>
+                                  <input type="radio" id="ab" name="question5" value="b"> <label>Transmission</label><br>
+                                  <input type="radio" id="ab" name="question5" value="c"> <label>Partial reflection and transmission</label><br>
+                                  <input type="radio" id="ab" name="question5" value="d"> <label>Partial transmission</label><br>
+                                  <div id="answer5" style="visibility: hidden;"> </div><br><br>
+                                  <p><b>6.  Interference occurs between the rays in the</b></p>
+                                  <input type="radio" id="ab" name="question6" value="a"> <label>Reflected and reflected parts</label><br>
+                                  <input type="radio" id="ab" name="question6" value="b"> <label>Reflected and transmitted parts </label><br>
+                                  <input type="radio" id="ab" name="question6" value="c"> <label>Transmitted and transmitted parts</label><br>
+                                  <input type="radio" id="ab" name="question6" value="d"> <label>None of the above</label><br>
+                                  <div id="answer6" style="visibility: hidden;"> </div><br><br>
+                                  <p><b>7.  The path difference between the rays responsible for the interference is given by the formula </b></p>
+                                  <input type="radio" id="ab" name="question7" value="a"> <label>Δ= 2μtcosθ</label><br>
+                                  <input type="radio" id="ab" name="question7" value="b"> <label>Δ= μtcosθ </label><br>
+                                  <input type="radio" id="ab" name="question7" value="c"> <label>Δ= 2μtcotθ</label><br>
+                                  <input type="radio" id="ab" name="question7" value="d"> <label>Δ= 2μtsinθ </label><br>
+                                  <div id="answer7" style="visibility: hidden;"> </div><br><br>
+                                  <p><b>8. The diameters of the nth dark fringe is given by </b></p>
+                                  <input type="radio" id="ab" name="question8" value="a"> <label>Dn<sup>2</sup>=4nR<sup>&lambda;</sup>&frasl;<sub>&mu;</sub></label><br>
+                                  <input type="radio" id="ab" name="question8" value="b"> <label>Dn=4nR<sup>&mu;</sup>&frasl;<sub>&lambda;</sub></label><br>
+                                  <input type="radio" id="ab" name="question8" value="c"> <label>Dn<sup>2</sup>=4nR<sup>&mu;</sup>&frasl;<sub>&lambda;</sub></label><br>
+                                  <input type="radio" id="ab" name="question8" value="d"> <label>None</label><br>
+                                  <div id="answer8" style="visibility: hidden;"> </div><br><br><br><br>
+                                <input id="button1" type="button" value="Check Answers" onclick="compare()">
+                                  <input id="button" " type="button" value="Check Result" onclick="check()">
+                                </form>
                             </div>
                         </div><!--end of tab content-->
                 </div><!--end container-->
             </div><!--end of row-->
         </div><!--end of container-fluid-->
+
+        <br><br>
 
         <!----FOOTER --->
         <div class="footer container-fluid">
@@ -289,10 +353,110 @@
                     <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpC73hmoYHg55uyCz2Lti_w"></a>
                     <a class="fa fa-instagram" href="https://www.instagram.com/lnmiit/"></a>
                 </p>
+                <p id="imp_links">
+                    <a href="index.html">HOME</a> | <a href="about.html">ABOUT</a> | <a href="videos.html">VIDEOS</a> | <a href="contact.html">CONTACT</a>
+                </p>
                 <p id="copyright">Copyright © 2018 Department of Physics,LNMIIT. All Rights Reserved.</p>
-                <p id="developer">Developed by LUSIP1-2018 Team
-            </div>
-        </div>
+                <p id="developer">Developed by 
+
+                <!-- Trigger the modal with a button -->
+                <a href="#" style="color: grey" data-toggle="modal" data-target="#myModal">LUSIP1-2018 Team</a></p>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">LUSIP 01 - 2018-19 Team</h4><br>
+                        
+                        <div class="row"  align="center">
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/aashish.jpg" alt="Aashish">
+                                    <div class="caption">                        
+                                          <p><b>Aashish Raj Gupta</b></p>
+                                          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BqC7eQWhYQAeNlFzCUA75QA%3D%3D"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://www.github.com/aashish157"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ashish.raj.56232938"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/verma.jpg" alt="Abhishek" >
+                                    <div class="caption">                        
+                                          <p><b>Abhishek Verma</b></p>
+                                          
+                                          <a href="https://github.com/Abhishek4798"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100007181074572"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/anoop.jpeg" alt="Anoop" >
+                                    <div class="caption">                        
+                                          <p><b>Anoop Singh</b></p>
+                                          
+                                          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2FAnoop0204&h=AT2362spT8JK6MZz3Oqp6PVGkyl084pI1bt6fi_Ryy8IbBeu5S-s6Uf0gnN413zR_tQwOeJ1vAJf_KUFlv3kGBgMxvQ_iPUHaJHmtWJy5etSdtM5boSFnvc8TDY1-Q"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100013989409214"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/ateet.jpg" alt="Ateet">
+                                    <div class="caption">                        
+                                          <p><b>Ateet Tiwari</b></p>
+                                          <a href="https://www.linkedin.com/in/ateettiwari97/"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/ateett12ue"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ateet.tiwari.7"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-0"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/hritik.jpg" alt="Hritik">
+                                    <div class="caption">                        
+                                          <p><b>Hritik Dusad</b></p>
+                                          <a href="http://www.linkedin.com/in/hritik-dusad-565530133"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/hritikdusad"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/hritik.dusad.3"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                        </div>
+                      </div>
+                      
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div><!--end of row-->
+        </div><!--end of footer-->
 
     </body>
 </html>

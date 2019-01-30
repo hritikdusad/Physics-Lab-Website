@@ -11,6 +11,9 @@
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="js/scroll_to_top.js"></script>
+        <script type="text/javascript" src="js/check/check5.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="path/to/sweet-alert.css" />
     </head>
 
     <body>
@@ -35,48 +38,43 @@
         </div> 
 
         <!--------HEADER---------->
-
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="row">                   
                     <ul class="nav navbar-nav">
                        <li><a href="index.html">HOME</a></li>
-                       <li><a href="#">ABOUT</a></li>
+                       <li><a href="about.html">ABOUT</a></li>
                        <li id="experiments" class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPERIMENTS <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-                                <li><a href="semiconductor.html">3. Measurement of band gap of semiconductor</a></li>
-                                <li><a href="refractive.html">4. Refractive index of glass with prism</a></li>
-                                <li><a href="rings.html">5. Wavelength of Sodium light with Newton's Rings</a></li>
-                                <li><a href="coil.html">6. Helmholtz coil</a></li>
-                                <li><a href="induction.html">7. Electromagnetic Induction</a></li>
-                                <li><a href="waves.html">8. Mechanical waves</a></li>
-                                <li><a href="diffraction.html">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="grating.html">10. Diffraction grating</a></li>
+                                <li><a href="bar_pendulum.html" >2. Acc. due to gravity by bar pendulum</a></li>
+                                <li><a href="coil.html">3. Helmholtz coil</a></li>
+                                <li><a href="semiconductor.html">4. Measurement of band gap of semiconductor</a></li>
+                                <li><a href="refractive.html">5. Refractive index of glass with prism</a></li>
+                                <li><a href="rings.html">6. Wavelength of Sodium light with Newton's Rings</a></li>
+                                <li><a href="gyroscope.html">7. Gyroscope</a></li>
+                                <li><a href="induction.html">8. Electromagnetic Induction</a></li>
+                                <li><a href="waves.html">9. Mechanical waves</a></li>
+                                <li><a href="diffraction.html">10. Fraunhoffer Diffraction</a></li>
+                                <li><a href="grating.html">11. Diffraction grating</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">PEOPLE</a></li>
-                        <li><a href="#">FACILITIES</a></li>
-                        <li id="videos" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">VIDEOS<span class="caret"></span></a>
+                        <li id="people" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PEOPLE <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-                                <li><a href="semiconductor.html">3. Band gap of semiconductor</a></li>
-                                <li><a href="">4. Refractive index of glass with prism</a></li>
-                                <li><a href="">5. λ of Sodium light with Newton's Rings</a></li>
-                                <li><a href="">6. Helmholtz coil</a></li>
-                                <li><a href="">7. Electromagnetic Induction</a></li>
-                                <li><a href="">8. Mechanical waves</a></li>
-                                <li><a href="">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="">10. Diffraction grating</a></li>
+                                <li><a href="faculty.html">Faculty / Staff</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li id="facilities" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">FACILITIES <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="comp_facilities.html" >Research Computational Facilities</a></li>
+                                <li><a href="exp_facilities.html">Experimental Facilities</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="videos.html">VIDEOS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
-        </nav><!--end of nav bar-->
+        </nav>
 
         <div class="container-fluid">
             <div class="col-md-12 row">
@@ -136,8 +134,8 @@
 
 
                                  <h4><b>Relation between μ and λ</b></h4>
-                                    <p align="center"><img src="resources/images/e4/4.1.jpg"></p>
-                                        <p align="center"><img src="resources/images/e4/4.2.jpg"> </p>
+                                    <p align="center"><img src="resources/images/e4/4.1.jpg" class="img-responsive"></p>
+                                        <p align="center"><img src="resources/images/e4/4.2.jpg" class="img-responsive"> </p>
                                        <p align="center">Figure 5.3: Variation of the angle of deviation (θd) with the angle of incidence (θi) for a particular wavelength.</p>
                                 <p>by measuring δmin for a variety of wavelengths, the variation of μ with wavelength may
                                     be determined.</p>
@@ -155,7 +153,7 @@
                                 <p align="center"><img src="resources/images/e4/4.4.jpg"></p>
                                 <p>An empirical equation of the form</p>(5.3)
                                 <p align="center"><img src="resources/images/e4/4.5.jpg"></p>
-                                <p align="center"><img src="resources/images/e4/4.6.jpg"></p>
+                                <p align="center"><img src="resources/images/e4/4.6.jpg" class="img-responsive"></p>
                                 <p align="center">Figure 5.4: Condition for minimum deviation</p>
                                 <p> was developed by Cauchy to describe the variation of μ with wavelength. Where a, b and
                                     c are constants and it is the purpose of this experiment to verify this equation (neglecting
@@ -176,7 +174,7 @@
                               <h4><b>Experimental procedure</b></h4>
                               <p>Initially make sure you understand what each component of the spectrometer as detailed in
                                     Fig. (5.5) does. The experimental setup consists of following parts. To obtain satisfactory</p>
-                              <p align="center"><img src="resources/images/e4/4.7.jpg"></p>
+                              <p align="center"><img src="resources/images/e4/4.7.jpg" class="img-responsive"></p>
                               <p align="center">Figure 4: Schematic diagram of the prism spectromete</p>
                               <p>results the spectroscope requires some initial adjustments before the desired measurements
                                     can be performed. For this experiment great care must be taken in adjusting the spectrometer so that the telescope is focused at infinity and the collimator set to give an
@@ -216,7 +214,7 @@
                                  <p align="center"><img src="resources/images/e4/4.9.jpg"></p>
                                  <p>Since 1 CSD = (1/2)° = 30', we have</p>(5.8)
                                  <p align="center"><img src="resources/images/e4/4.10.jpg"></p> 
-                                  <p align="center"><img src="resources/images/e4/4.11.jpg"></p>
+                                  <p align="center"><img src="resources/images/e4/4.11.jpg" class="img-responsive"></p>
                                 
                                 <p align="center">Figure 5.6: Measurement of the reflecting angle of prism.</p>
 
@@ -253,7 +251,7 @@
                                         prism position is as shown in Fig. 5.7.</p>
                                 <p align="center"><img src="resources/images/e4/4.12.jpg"></p>
                                 <p align="center">Figure 5.7: Prism position for viewing the spectrum due to refraction</p>
-                                 <p align="center"><img src="resources/images/e4/4.13.jpg"></p>
+                                 <p align="center"><img src="resources/images/e4/4.13.jpg" class="img-responsive"></p>
                                 <p align="center">Table 5.1: Discharge lamp wavelengths</p> 
                                 <p>(Remember minimum deviation corresponds to the point at which movement of the
                                     lines of the Hg spectrum over the field of view of the telescope is reversed, although
@@ -279,7 +277,7 @@
                               <p><h4><b>Observations :</b></h4></p>
                               <h5><b></b>Measurement of angle of prism (A)</h5>
                               <p >Least count of the spectrometer (l.c.) = .......</p>
-                              <p align="center"><img src="resources/images/e4/4.14.jpg"></p>
+                              <p align="center"><img src="resources/images/e4/4.14.jpg" class="img-responsive"></p>
                               <p align="center">Table 5.2: Table for measuring angle of prism (A). CSR - Circular scale reading, 
                                         VSR -Vernier scale reading.</p>
 
@@ -298,7 +296,7 @@
 
                               <p><h4><b>Result :</b></h4></p>
                               <p>1. Calculate the refractive index for different values of wavelengths.</p>
-                                <p><img src="resources/images/e4/4.15.jpg"></p>
+                                <p><img src="resources/images/e4/4.15.jpg" class="img-responsive"></p>
                                 <p align="center">Table 5.3: Table for measuring angle of minimum deviation. CSR - Circular scale   
                                         reading, VSR - Vernier scale reading.</p>
 
@@ -311,7 +309,7 @@
                                     minutes in these cases are converted to fractional degree via the conversion 1° = 60'.</p>
                                 <p>2. Make sure your calculator is set to degree and not to radian or gradient.</p>
 
-                                <p align="center"><img src="resources/images/e4/4.16.jpg"></p>
+                                <p align="center"><img src="resources/images/e4/4.16.jpg" class="img-responsive"></p>
                                 <p align="center">Figure 5.8: Difference of angles in the two cases should be as follows: (a) δ = |θ2 − θ1| and (b) δ = (360 − θ1) + θ2 = 360 − (θ1 − θ2).</p>
 
 
@@ -320,20 +318,82 @@
 
                             <div id="menu2" class="tab-pane fade">
                               <h3>VIDEO</h3>
-                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                              <p align="center"><iframe width="500vw" height="280vh" src="https://www.youtube-nocookie.com/embed/tnWoL2XiWco?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+                              <p align="center">
+                              <iframe width="500vw" height="280vh" src="https://www.youtube-nocookie.com/embed/kQMNaP7X_Tg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+                              <p align="center">
+                              <iframe width="500vw" height="280vh" src="https://www.youtube-nocookie.com/embed/6lSA7v1htfg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </p><br>
                             </div>
                             <div id="menu3" class="tab-pane fade">
                               <h3>RESOURCES</h3>
-                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                              <p><b>1. <a href="https://en.wikipedia.org/wiki/Spectrometer" target="_blank">Spectrometer</a><br><br>
+                              2. <a href="https://en.wikipedia.org/wiki/Minimum_deviation" target="_blank">Minimum deviation</a><br><br>
+                              3. Mark A. Peterson. <a href="http://www.mtholyoke.edu/~mpeterso/classes/phys103/geomopti/MinDev.html" target="_blank">"Minimum Deviation by a Prism"</a>. Mount Holyoke College.</b></p>
                             </div>
                             <div id="menu4" class="tab-pane fade">
                               <h3>VIVA VOCE</h3>
-                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                              <p id="quiz_heading">-Check Yourself-</p>
+                              
+                                <form id="quiz" name="quiz">
+                                  <p><b>1. If the prism is rotated about the axis it is found that the angle of deviation changes but never becomes less than a certain minimum value,  δmin known as the </b></p>
+                                  <input type="radio" id="ab" name="question1" value="a"> <label>Angle of minimum deviation</label><br>
+                                  <input type="radio" id="ab" name="question1" value="b"> <label>Angle of maximum deviation</label><br>
+                                  <input type="radio" id="ab" name="question1" value="c"> <label>Angle of prism</label><br>
+                                  <input type="radio" id="ab" name="question1" value="d"> <label>Angle og Deviation</label><br>
+                                  <div id="answer1" style="visibility: hidden;"> </div>
+                                  <p><b>2. The minimum value of the angle of min deviation, occurs when the angle at which the light emerges is ________ to the angle of incidence such that the ray passes parallel to the base of the prism</b></p>
+                                  <input type="radio" id="ab" name="question2" value="a"> <label>Equal</label><br>
+                                  <input type="radio" id="ab" name="question2" value="b"> <label>Greater than</label><br>
+                                  <input type="radio" id="ab" name="question2" value="c"> <label>Less than</label><br>
+                                  <input type="radio" id="ab" name="question2" value="d"> <label>None of the above</label></label><br>
+                                  <div id="answer2" style="visibility: hidden;"> </div>
+                                  <p><b>3. At each face the ray changes direction by i − r and so the total minimum deviation is δmin =</b></p>
+                                  <input type="radio" id="ab" name="question3" value="a"> <label>2(θ<sub>i</sub>-θ<sub>r</sub>)</label> <br>
+                                  <input type="radio" id="ab" name="question3" value="b"> <label>(θ<sub>i</sub>-θ<sub>r</sub>)</label><br>
+                                  <input type="radio" id="ab" name="question3" value="c"> <label>2θ<sub>i</sub>-θ<sub>r</sub></label><br>
+                                  <input type="radio" id="ab" name="question3" value="d"> <label>θ<sub>i</sub>-2θ<sub>r</sub></label><br>
+                                  <div id="answer3" style="visibility: hidden;"> </div>
+                                  <p><b>4. δmin varies _______with the wavelength</b></p>
+                                  <input type="radio" id="ab" name="question4" value="a"> <label>Rapidly</label><br>
+                                  <input type="radio" id="ab" name="question4" value="b"> <label> Slowly</label><br>
+                                  <input type="radio" id="ab" name="question4" value="c"> <label>Very rapidly</label> <br>
+                                  <input type="radio" id="ab" name="question4" value="d"> <label>Does not depend </label><br>
+                                  <div id="answer4" style="visibility: hidden;"> </div>
+                                  <p><b>5. Variation of the angle of deviation (θd) with the angle of incidence (θi) for a particular wavelength is a ________ path.</b></p>
+                                  <input type="radio" id="ab" name="question5" value="a"> <label>Straight path</label><br>
+                                  <input type="radio" id="ab" name="question5" value="b"> <label>Curved path</label><br>
+                                  <input type="radio" id="ab" name="question5" value="c"> <label>Round path </label><br>
+                                  <input type="radio" id="ab" name="question5" value="d"> <label> Parabolic path </label> <br>
+                                  <div id="answer5" style="visibility: hidden;"> </div>
+                                  <p><b>6. The refractive index of the prism material, μ is a function of the angle of minimum deviation (min), the incident wavelength () and the prism refracting angle (A).</b></p>
+                                  <input type="radio" id="ab" name="question6" value="a"> <label>Angle of minimum deviation</label> <br>
+                                  <input type="radio" id="ab" name="question6" value="b"> <label>Incident wavelength </label><br>
+                                  <input type="radio" id="ab" name="question6" value="c"> <label>Prism refracting angle </label><br>
+                                  <input type="radio" id="ab" name="question6" value="d"> <label>All of the above</label><br>
+                                  <div id="answer6" style="visibility: hidden;"> </div>
+                                  <p><b> 7. Least Count LC =</b></p>
+                                  <input type="radio" id="ab" name="question7" value="a"> <label>1 CSD − 1 VSD </label><br>
+                                  <input type="radio" id="ab" name="question7" value="b"> <label>1 VSD − 1 CSD </label><br>
+                                  <input type="radio" id="ab" name="question7" value="c"> <label>30 VSD − 29 CSD </label><br>
+                                  <input type="radio" id="ab" name="question7" value="d"> <label>None of the above </label><br>
+                                  <div id="answer7" style="visibility: hidden;"> </div>
+                                  <p><b>8. 30 vernier scale divisions (VSD) coincides with ----------- circular scale divisions (CSD).</b></p>
+                                  <input type="radio" id="ab" name="question8" value="a"> <label>1</label><br>
+                                  <input type="radio" id="ab" name="question8" value="b"> <label>30</label><br>
+                                  <input type="radio" id="ab" name="question8" value="c"> <label>29</label><br>
+                                  <input type="radio" id="ab" name="question8" value="d"> <label>100</label><br>
+                                  <div id="answer8" style="visibility: hidden;"> </div><br><br>
+                                 <input id="button1" type="button" value="Check Answers" onclick="compare()">
+                                  <input id="button" " type="button" value="Check Result" onclick="check()">
+                                </form>
                             </div>
                         </div><!--end of tab content-->
                 </div><!--end container-->
             </div><!--end of row-->
         </div><!--end of container-fluid-->
+
+        <br><br>
 
         <!----FOOTER --->
         <div class="footer container-fluid">
@@ -345,10 +405,110 @@
                     <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpC73hmoYHg55uyCz2Lti_w"></a>
                     <a class="fa fa-instagram" href="https://www.instagram.com/lnmiit/"></a>
                 </p>
+                <p id="imp_links">
+                    <a href="index.html">HOME</a> | <a href="about.html">ABOUT</a> | <a href="videos.html">VIDEOS</a> | <a href="contact.html">CONTACT</a>
+                </p>
                 <p id="copyright">Copyright © 2018 Department of Physics,LNMIIT. All Rights Reserved.</p>
-                <p id="developer">Developed by LUSIP1-2018 Team
-            </div>
-        </div>
+                <p id="developer">Developed by 
+
+                <!-- Trigger the modal with a button -->
+                <a href="#" style="color: grey" data-toggle="modal" data-target="#myModal">LUSIP1-2018 Team</a></p>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">LUSIP 01 - 2018-19 Team</h4><br>
+                        
+                        <div class="row"  align="center">
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/aashish.jpg" alt="Aashish">
+                                    <div class="caption">                        
+                                          <p><b>Aashish Raj Gupta</b></p>
+                                          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BqC7eQWhYQAeNlFzCUA75QA%3D%3D"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://www.github.com/aashish157"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ashish.raj.56232938"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/verma.jpg" alt="Abhishek" >
+                                    <div class="caption">                        
+                                          <p><b>Abhishek Verma</b></p>
+                                          
+                                          <a href="https://github.com/Abhishek4798"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100007181074572"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/anoop.jpeg" alt="Anoop" >
+                                    <div class="caption">                        
+                                          <p><b>Anoop Singh</b></p>
+                                          
+                                          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2FAnoop0204&h=AT2362spT8JK6MZz3Oqp6PVGkyl084pI1bt6fi_Ryy8IbBeu5S-s6Uf0gnN413zR_tQwOeJ1vAJf_KUFlv3kGBgMxvQ_iPUHaJHmtWJy5etSdtM5boSFnvc8TDY1-Q"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100013989409214"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/ateet.jpg" alt="Ateet">
+                                    <div class="caption">                        
+                                          <p><b>Ateet Tiwari</b></p>
+                                          <a href="https://www.linkedin.com/in/ateettiwari97/"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/ateett12ue"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ateet.tiwari.7"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-0"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/hritik.jpg" alt="Hritik">
+                                    <div class="caption">                        
+                                          <p><b>Hritik Dusad</b></p>
+                                          <a href="http://www.linkedin.com/in/hritik-dusad-565530133"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/hritikdusad"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/hritik.dusad.3"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                        </div>
+                      </div>
+                      
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div><!--end of row-->
+        </div><!--end of footer-->
 
     </body>
 </html>

@@ -12,8 +12,42 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="js/scroll_to_top.js"></script>
     </head>
+    <style>
+        .header{
+            padding-bottom: 25px;
+        }
+        .space{
+            padding-bottom: 5px;
+        }
+        .heading{
+            text-align: center;
+            font-size: 24px;
+            font-style: italic;
+            padding-bottom: 25px:
+            color:#007bb5;
 
+        }
+    </style>
     <body>
+         <!--HOVERABLE SIDENAV-->
+        <div id="mySidenav" class="sidenav">
+          <a href="https://www.facebook.com/lnmiit.ac.in/" id="face">Facebook
+            <img align="right" src="resources/images/social_icons/facebook.svg" style="width: 4vh;height: 4vh;">
+          </a>
+          <a href="https://twitter.com/lnmiit_jaipur?lang=en" id="twit">Twitter
+            <img align="right" src="resources/images/social_icons/twitter.svg" style="width: 4vh;height: 4vh;">
+          </a>
+          <a href="https://www.youtube.com/channel/UCpC73hmoYHg55uyCz2Lti_w" id="yout">Youtube
+            <img align="right" src="resources/images/social_icons/youtube.svg" style="width: 4vh;height: 4vh;">
+          </a>
+          <a href="https://www.instagram.com/lnmiit/" id="inst">Instagram
+            <img align="right" src="resources/images/social_icons/instagram.svg" style="width: 4vh;height: 4vh;">
+          </a>
+          <a href="https://www.linkedin.com/school/the-lnm-institute-of-information-technology/" id="link">Linkedin
+            <img align="right" src="resources/images/social_icons/linkedin.svg" style="width: 4vh;height: 4vh;">
+          </a>
+          
+        </div>
         <!--SCROLL TO TOP BUTTON--->
         <button onclick="topFunction()" id="scroll_btn" title="Go to top"><b>^</b></button>
 
@@ -43,38 +77,31 @@
                        <li><a href="about.html">ABOUT</a></li>
                        <li id="experiments" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPERIMENTS <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-
-                                <li><a href="semiconductor.html">3. Measurement of band gap of semiconductor</a></li>
-                                <li><a href="refractive.html">4. Refractive index of glass with prism</a></li>
-                                <li><a href="">5. Wavelength of Sodium light with Newton's Rings</a></li>
-                                <li><a href="coil.html">6. Helmholtz coil</a></li>
-
-                                <li><a href="induction.html">7. Electromagnetic Induction</a></li>
-
-                                <li><a href="">8. Mechanical waves</a></li>
-                                <li><a href="">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="">10. Diffraction grating</a></li>
+                                <li><a href="bar_pendulum.html" >2. Acc. due to gravity by bar pendulum</a></li>
+                                <li><a href="coil.html">3. Helmholtz coil</a></li>
+                                <li><a href="semiconductor.html">4. Measurement of band gap of semiconductor</a></li>
+                                <li><a href="refractive.html">5. Refractive index of glass with prism</a></li>
+                                <li><a href="rings.html">6. Wavelength of Sodium light with Newton's Rings</a></li>
+                                <li><a href="gyroscope.html">7. Gyroscope</a></li>
+                                <li><a href="induction.html">8. Electromagnetic Induction</a></li>
+                                <li><a href="waves.html">9. Mechanical waves</a></li>
+                                <li><a href="diffraction.html">10. Fraunhoffer Diffraction</a></li>
+                                <li><a href="grating.html">11. Diffraction grating</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">PEOPLE</a></li>
-                        <li><a href="facilities.html">FACILITIES</a></li>
-                        <li id="videos" class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">VIDEOS<span class="caret"></span></a>
+                        <li id="people" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PEOPLE <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-                                <li><a href="semiconductor.html">3. Band gap of semiconductor</a></li>
-                                <li><a href="">4. Refractive index of glass with prism</a></li>
-                                <li><a href="">5. λ of Sodium light with Newton's Rings</a></li>
-                                <li><a href="">6. Helmholtz coil</a></li>
-                                <li><a href="">7. Electromagnetic Induction</a></li>
-                                <li><a href="">8. Mechanical waves</a></li>
-                                <li><a href="">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="">10. Diffraction grating</a></li>
+                                <li><a href="faculty.html">Faculty / Staff</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li id="facilities" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">FACILITIES <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="comp_facilities.html" >Research Computational Facilities</a></li>
+                                <li><a href="exp_facilities.html">Experimental Facilities</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="videos.html">VIDEOS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
@@ -83,28 +110,148 @@
         
         <div class="container-fluid">
             <div class="col-md-1"></div>
-            <div class="col-md-5 col-xs-12">
-                <h3>1. 'g' BY BAR PENDULUM </h3>
-                <video width="100%" height="auto" controls>
-                    <source src="resources/videos/bar_pendulum.mp4" type="video/mp4">
-                </video>
-                <h3>2. e/m BY THOMSON'S METHOD </h3>
-                <video width="100%" height="auto" controls>
-                    <source src="resources/videos/em_thomson_method.mp4" type="video/mp4">
-                </video>
+            <div class="col-md-10 col-xs-12">
+                
+                <div class="row">
+                    <div class="col-md-12"><h2 class="heading">Graph Videos</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="header">1.1 Graph Basics </h3>
+                        <p style="margin-top: -30px"><i>by - Prof. Amit Neogi</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube.com/embed/AGUKQpg_LGw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="header">1.2 Semi-Log Graph Part 1</h3>
+                        <p style="margin-top: -30px"><i>by - Prof. Amit Neogi</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/8sd4or77Xgs?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div><br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="header">1.3 Semi-Log Graph Part 2</h3>
+                        <p style="margin-top: -30px"><i>by - Prof. Amit Neogi</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/Xv0uyZWz3E8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div><br><br>          
+
+
+                <div class="row">
+                    <hr>
+                    <div class="col-md-12"><h2 class="heading">Instrument Videos</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="header">1. Mass Spring System </h3>
+                        <p style="margin-top: -30px"><i>by - Prof. Somnath Biswas</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/EF_mhQDTB5w?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="header">2.1 Resistivity Of A Wire</h3>
+                        <p style="margin-top: -30px"><i>by - Prof. Somnath Biswas</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/IreyQWy_0Zg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div><br><br>          
+            
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="header">2.2 Screw Gauge </h3>
+                        <p style="margin-top: -30px"><i>by - Prof. Somnath Biswas</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/XXhI4p7IT6c?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3 class="header">3.1 Wheatstone Bridge </h3>
+                        <p style="margin-top: -30px"><i>by - Prof. Somnath Biswas</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/0ryE3_NqnKI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>                  
+                </div><br><br>          
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="header">3.2 Wheatstone Bridge Setup</h3>
+                        <p style="margin-top: -30px"><i>by - Prof. Somnath Biswas</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/F12SP8sJmUA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3 class="header">3.3 Multimeter</h3>
+                        <p style="margin-top: -30px"><i>by - Prof. Somnath Biswas</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/sD1iJymORxQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div><br><br>          
+
+
+                <div class="row">
+                    <hr>
+                    <div class="col-md-12"><h2 class="heading">Experiment Videos</h2></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="header">2. 'g' By Bar Pendulum </h3>
+                        <p style="margin-top: -30px"><i>by - Prof. Anupam Singh</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/34VvJvlhvq0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                    <div class="col-md-6">
+                        <h3 class="header">3. Helmholtz Coil</h3>
+                        <p style="margin-top: -30px"><i>by - Prof. Subhayan Biswas</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/w90jgVHoI8g?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                </div><br><br>
+
+                <div class="row">   
+                    <div class="col-md-6">
+                        <h3 class="header">4. Band Gap of Semiconductor </h3>
+                        <p style="margin-top: -32px"><i>by - Prof. Subhayan Biswas</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/TpnjU_s-kvI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                    <div class="col-md-6">
+                        <h3>5.1 Refractive Index of Glass with Prism </h3>
+                        <p style="margin-top: -32px" align="right"><i>by - Prof. Anjishnu Sarkar</i></p>
+                        <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/tnWoL2XiWco?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                </div><br><br>
+
+                <div class="row">
+                    <div class="col-md-6">
+                    <h3>5.2 Refractive Index of Glass with Prism </h3>
+                    <p style="margin-top: -32px" align="right"><i>by - Prof. Anjishnu Sarkar</i></p>
+                    <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/kQMNaP7X_Tg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                    <div class="col-md-6">
+                    <h3>5.3 Refractive Index of Glass with Prism </h3>
+                    <p style="margin-top: -32px" align="right"><i>by - Prof. Anjishnu Sarkar</i></p>
+                    <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/6lSA7v1htfg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                </div><br><br>
+
+                <!--div class="row">
+                <div class="col-md-6">
+                <h3>5.1 Wavelength of Sodium light by Newton's rings</h3>
+                <iframe width="100%" height="270vh" src="https://www.youtube-nocookie.com/embed/Ltz6a1N9HIA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                <div class="col-md-6">
+                <h3>5.2 Wavelength of Sodium light by Newton's rings</h3>
+                <iframe width="100%" height="270vh" src="https://www.youtube-nocookie.com/embed/FTQLOYHGf-U?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                </div-->
+
+                <!--div class="row">
+                <div class="col-md-6">
+                <h3>5.3 Wavelength of Sodium light by Newton's rings</h3>
+                <iframe width="100%" height="270vh" src="https://www.youtube-nocookie.com/embed/iZGHapIoqOw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                
+                </div-->
+
+                <div class="row">
+                    <div class="col-md-6">
+                    <h3>9.1 Mechanical Waves</h3>
+                    <p style="margin-top: -8px"><i>by - Prof. Amit Neogi</i></p>
+                    <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/v16gm2unMoo?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                    <div class="col-md-6">
+                    <h3>9.2 Mechanical Waves</h3>
+                    <p style="margin-top: -8px"><i>by - Prof. Amit Neogi</i></p>
+                    <iframe width="100%" height="270vh" style="border: 1px solid black" src="https://www.youtube-nocookie.com/embed/Y4ZuKgz_ui8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                </div><br><br>
             </div>
-            <div class="col-md-5 col-xs-12">
-                <h3>3. e/m BY THOMSON'S METHOD </h3>
-                <video width="100%" height="auto" controls>
-                    <source src="resources/videos/em_thomson_method.mp4" type="video/mp4">
-                </video>
-                <h3>4. e/m BY THOMSON'S METHOD </h3>
-                <video width="100%" height="auto" controls>
-                    <source src="resources/videos/em_thomson_method.mp4" type="video/mp4">
-                </video>
-            </div>
+            
+            <div class="row space"></div>
+
             <div class="col-md-1"></div>
-        </div>
+        </div><br><br><br><br>
 
         <!----FOOTER --->
         <div class="footer container-fluid">
@@ -117,12 +264,109 @@
                     <a class="fa fa-instagram" href="https://www.instagram.com/lnmiit/"></a>
                 </p>
                 <p id="imp_links">
-                    <a href="index.html">HOME</a> | <a href="about.html">ABOUT</a> | <a href="contact.html">CONTACT</a>
+                    <a href="index.html">HOME</a> | <a href="about.html">ABOUT</a> | <a href="videos.html">VIDEOS</a> | <a href="contact.html">CONTACT</a>
                 </p>
                 <p id="copyright">Copyright © 2018 Department of Physics,LNMIIT. All Rights Reserved.</p>
-                <p id="developer">Developed by LUSIP1-2018 Team
-            </div>
-        </div>
+                <p id="developer">Developed by 
+
+                <!-- Trigger the modal with a button -->
+                <a href="#" style="color: grey" data-toggle="modal" data-target="#myModal">LUSIP1-2018 Team</a></p>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">LUSIP 01 - 2018-19 Team</h4><br>
+                        
+                        <div class="row"  align="center">
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/aashish.jpg" alt="Aashish">
+                                    <div class="caption">                        
+                                          <p><b>Aashish Raj Gupta</b></p>
+                                          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BqC7eQWhYQAeNlFzCUA75QA%3D%3D"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://www.github.com/aashish157"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ashish.raj.56232938"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/verma.jpg" alt="Abhishek" >
+                                    <div class="caption">                        
+                                          <p><b>Abhishek Verma</b></p>
+                                          
+                                          <a href="https://github.com/Abhishek4798"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100007181074572"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/anoop.jpeg" alt="Anoop" >
+                                    <div class="caption">                        
+                                          <p><b>Anoop Singh</b></p>
+                                          
+                                          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2FAnoop0204&h=AT2362spT8JK6MZz3Oqp6PVGkyl084pI1bt6fi_Ryy8IbBeu5S-s6Uf0gnN413zR_tQwOeJ1vAJf_KUFlv3kGBgMxvQ_iPUHaJHmtWJy5etSdtM5boSFnvc8TDY1-Q"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100013989409214"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/ateet.jpg" alt="Ateet">
+                                    <div class="caption">                        
+                                          <p><b>Ateet Tiwari</b></p>
+                                          <a href="https://www.linkedin.com/in/ateettiwari97/"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/ateett12ue"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ateet.tiwari.7"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-0"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/hritik.jpg" alt="Hritik">
+                                    <div class="caption">                        
+                                          <p><b>Hritik Dusad</b></p>
+                                          <a href="http://www.linkedin.com/in/hritik-dusad-565530133"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/hritikdusad"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/hritik.dusad.3"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                        </div>
+                      </div>
+                      
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div><!--end of row-->
+        </div><!--end of footer-->
     
     </body>
 </html>

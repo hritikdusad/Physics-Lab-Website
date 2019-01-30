@@ -11,6 +11,9 @@
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="js/scroll_to_top.js"></script>
+        <script type="text/javascript" src="js/check/check9.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="path/to/sweet-alert.css" />
     </head>
 
     <body>
@@ -35,48 +38,43 @@
         </div> 
 
         <!--------HEADER---------->
-
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="row">                   
                     <ul class="nav navbar-nav">
                        <li><a href="index.html">HOME</a></li>
-                       <li><a href="#">ABOUT</a></li>
+                       <li><a href="about.html">ABOUT</a></li>
                        <li id="experiments" class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPERIMENTS <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-                                <li><a href="semiconductor.html">3. Measurement of band gap of semiconductor</a></li>
-                                <li><a href="refractive.html">4. Refractive index of glass with prism</a></li>
-                                <li><a href="rings.html">5. Wavelength of Sodium light with Newton's Rings</a></li>
-                                <li><a href="coil.html">6. Helmholtz coil</a></li>
-                                <li><a href="induction.html">7. Electromagnetic Induction</a></li>
-                                <li><a href="waves.html">8. Mechanical waves</a></li>
-                                <li><a href="diffraction.html">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="grating.html">10. Diffraction grating</a></li>
+                                <li><a href="bar_pendulum.html" >2. Acc. due to gravity by bar pendulum</a></li>
+                                <li><a href="coil.html">3. Helmholtz coil</a></li>
+                                <li><a href="semiconductor.html">4. Measurement of band gap of semiconductor</a></li>
+                                <li><a href="refractive.html">5. Refractive index of glass with prism</a></li>
+                                <li><a href="rings.html">6. Wavelength of Sodium light with Newton's Rings</a></li>
+                                <li><a href="gyroscope.html">7. Gyroscope</a></li>
+                                <li><a href="induction.html">8. Electromagnetic Induction</a></li>
+                                <li><a href="waves.html">9. Mechanical waves</a></li>
+                                <li><a href="diffraction.html">10. Fraunhoffer Diffraction</a></li>
+                                <li><a href="grating.html">11. Diffraction grating</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">PEOPLE</a></li>
-                        <li><a href="#">FACILITIES</a></li>
-                        <li id="videos" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">VIDEOS<span class="caret"></span></a>
+                        <li id="people" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PEOPLE <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-                                <li><a href="semiconductor.html">3. Band gap of semiconductor</a></li>
-                                <li><a href="">4. Refractive index of glass with prism</a></li>
-                                <li><a href="">5. λ of Sodium light with Newton's Rings</a></li>
-                                <li><a href="">6. Helmholtz coil</a></li>
-                                <li><a href="">7. Electromagnetic Induction</a></li>
-                                <li><a href="">8. Mechanical waves</a></li>
-                                <li><a href="">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="">10. Diffraction grating</a></li>
+                                <li><a href="faculty.html">Faculty / Staff</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li id="facilities" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">FACILITIES <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="comp_facilities.html" >Research Computational Facilities</a></li>
+                                <li><a href="exp_facilities.html">Experimental Facilities</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="videos.html">VIDEOS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
-        </nav><!--end of nav bar-->
+        </nav>
 
         <div class="container-fluid">
             <div class="col-md-12 row">
@@ -135,21 +133,21 @@
                                 <p>Fig. 10.1 shows a plane wave of wavelength λ incident on a slit width a. The diffraction
                                     pattern, intensity versus y is plotted in the figure. Wave theory predicts that the
                                     Fraunhoffer diffraction pattern intensity due to a rectangular slit will be of the form</p>(10.1)
-                                <p align="center"><img src="resources/images/e9/9.1.jpg"></p>
+                                <p align="center"><img src="resources/images/e9/9.1.jpg" style="width: 15%;"></p>
                                 <p>where β = (ka sin θ)/2, k = 2π/λ, a = slit width and θ = angle formed by the light ray with respect to the system central axis. The minima in the diffraction pattern occurs when I(θ) = 0. This condition requires that</p>(10.2)
-                                <p align="center"><img src="resources/images/e9/9.2.jpg"></p>
+                                <p align="center"><img src="resources/images/e9/9.2.jpg" style="width: 15%;"></p>
                                 <p>where, m is the order number in diffraction pattern and θm is angle measured with respect
                                     to system central axis to the mth order minima. The shape of this pattern is shown in</p>
-                                <p align="center"><img src="resources/images/e9/9.3.jpg"></p>
+                                <p align="center"><img src="resources/images/e9/9.3.jpg" style="width: 40%;"></p>
                                 <p align="center">Figure 10.1: The Fraunhoffer diffraction pattern of a single slit.</p>
                                 <p>Fig. 10.1. If θm is small, then</p>(10.3)
-                                <p align="center"><img src="resources/images/e9/9.4.jpg"></p>
+                                <p align="center"><img src="resources/images/e9/9.4.jpg" style="width: 20%;"></p>
                                 <p>Further from geometry we have</p>(10.4)
-                                <p align="center"><img src="resources/images/e9/9.5.jpg"></p>
+                                <p align="center"><img src="resources/images/e9/9.5.jpg" style="width: 20%;"></p>
                                 <p>where y = the distance between central maxima to the mth order minima point and D =
                                     distance between slit and photo diode (observed form instrument). Combining Eqs. 10.3
                                     and 10.4, the slit width can be calculated as</p>(10.5)
-                                <p align="center"><img src="resources/images/e9/9.6.jpg"></p>
+                                <p align="center"><img src="resources/images/e9/9.6.jpg" style="width: 10%:"></p>
                             </div>
                             
 
@@ -163,7 +161,7 @@
                                     parallel to and along the central axis of the bench all along its length.</p>
                               <p>3. Let the beam pass through a beam expander. Adjust the slit position until the laser
                                     beam is incident on the full width of the slit.</p>
-                                <p align="center"><img src="resources/images/e9/9.7.jpg"></p>
+                                <p align="center"><img src="resources/images/e9/9.7.jpg" style="width: 40%;"></p>
                               <p align="center">Figure 10.2: Experimental setup for single slit diffraction pattern</p>
                               <p>4. Attach the viewing screen to a component carrier and position it at the end of the
                                     bench furthest from the laser.</p>
@@ -186,7 +184,7 @@
 
 
                               <p><h4><b>Observations :</b></h4></p>
-                              <p align="center"><img src="resources/images/e9/9.8.jpg"></p>
+                              <p align="center"><img src="resources/images/e9/9.8.jpg" style="width: 50%;"></p>
                         
                              
                               <p><h4><b>Result :</b></h4></p>
@@ -203,20 +201,79 @@
 
                             <div id="menu2" class="tab-pane fade">
                               <h3>VIDEO</h3>
-                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                              <p align="center" style="height: 200px">CURRENTLY NOT AVAILABLE
+                              <br>
+                              <img src="resources/images/sad_emoji.png" style="height: 100px"></p>
                             </div>
                             <div id="menu3" class="tab-pane fade">
                               <h3>RESOURCES</h3>
-                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                              <p><b>1. <a href="https://en.wikipedia.org/wiki/Fraunhofer_diffraction" target="_blank">Fraunhofer diffraction</a><br><br>
+                                2. <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/phyopt/fraungeo.html" target="_blank">http://hyperphysics.phy-astr.gsu.edu/hbase/phyopt/fraungeo.html</a><br><br>
+                                3. <a href="https://www.youtube.com/watch?v=rmg1XyOSAk0" target="_blank">https://www.youtube.com/watch?v=rmg1XyOSAk0</a></b></p>
                             </div>
                             <div id="menu4" class="tab-pane fade">
                               <h3>VIVA VOCE</h3>
-                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                              <p id="quiz_heading">-Check Yourself-</p>
+                              
+                                <form id="quiz" name="quiz">
+                                  <p><b>1. Diffraction is the _______ phenomenon which describes the deviation from straight line propagation of a wave when it encounters an obstruction</b></p>
+                                  <input type="radio" id="ab" name="question1" value="a"> <label>Particle</label><br>
+                                  <input type="radio" id="ab" name="question1" value="b"> <label>Wave</label><br>
+                                  <input type="radio" id="ab" name="question1" value="c"> <label>Both</label><br>
+                                  <input type="radio" id="ab" name="question1" value="d"> <label>None</label><br>
+                                  <div id="answer1" style="visibility: hidden;"> </div>
+                                  <p><b>2. In the case of light waves both opaque and transparent obstacles cause this effect/b></p>
+                                  <input type="radio" id="ab" name="question2" value="a"> <label>opaque </label><br>
+                                  <input type="radio" id="ab" name="question2" value="b"> <label>Transparent</label><br>
+                                  <input type="radio" id="ab" name="question2" value="c"> <label>Parrtial transparent</label><br>
+                                  <input type="radio" id="ab" name="question2" value="d"> <label>a & b both</label><br>
+                                  <div id="answer2" style="visibility: hidden;"> </div>
+                                  <p><b>3. Fraunhoffer diffraction , which occurs when the waves incident on the slit and the screen (detector) are plane waves. This diffraction is produced when both the light source and screen are effectively at ______ from the given obstacle.</b></p>
+                                  <input type="radio" id="ab" name="question3" value="a"> <label>Small distance</label><br>
+                                  <input type="radio" id="ab" name="question3" value="b"> <label>Large distance</label><br>
+                                  <input type="radio" id="ab" name="question3" value="c"> <label>Infinite distance</label><br>
+                                  <input type="radio" id="ab" name="question3" value="d"> <label>Very small distance</label><br>
+                                  <div id="answer3" style="visibility: hidden;"> </div>
+                                  <p><b>4. In frensel diffraction, diffraction is produed when</b></p>
+                                  <input type="radio" id="ab" name="question4" value="a"> <label>Source is at a finite distance from the obstacle </label><br>
+                                  <input type="radio" id="ab" name="question4" value="b"> <label>Screen is at a finite distance from the obstacle</label><br>
+                                  <input type="radio" id="ab" name="question4" value="c"> <label>Either of them is at a finite distance from the obstacle</label><br>
+                                  <input type="radio" id="ab" name="question4" value="d"> <label>Both are at a finite distance from the obstacle </label><br>
+                                  <div id="answer4" style="visibility: hidden;"> </div>
+                                  <p><b>5. We can observe Fraunhoffer diffraction experimentally by using a collimated light source and</b></p>
+                                  <input type="radio" id="ab" name="question5" value="a"> <label>Placing the viewing screen at the focal plane of a convex lens </label><br>
+                                  <input type="radio" id="ab" name="question5" value="b"> <label>Convex lens is located behind the obstacle located behind the obstacle</label><br>
+                                  <input type="radio" id="ab" name="question5" value="c"> <label>By placing the screen at a large distance from the obstacle.</label> <br>
+                                  <input type="radio" id="ab" name="question5" value="d"> <label>All of them </label><br>
+                                  <div id="answer5" style="visibility: hidden;"> </div>
+                                  <p><b>6. Wave theory predicts that the Fraunhoffer diffraction pattern intensity due to a rectangular slit will be of the form</b></p>
+                                  <input type="radio" id="ab" name="question6" value="a"> <label> I = I<sub>o</sub>Sinβ/β<sup>2</sup></label> <br>
+                                  <input type="radio" id="ab" name="question6" value="b"> <label>I = I<sub>o</sub>Sin<sup>2</sup>β/β<sup>2</sup></label><br>
+                                  <input type="radio" id="ab" name="question6" value="c"> <label>I = I<sub>o</sub>Sin<sup>2</sup>β/2β</label><br>
+                                  <input type="radio" id="ab" name="question6" value="d"> <label>I = I<sub>o</sub>Sinβ/2β</label> <br>
+                                  <div id="answer6" style="visibility: hidden;"> </div>
+                                  <p><b>7. The minima in the diffraction pattern occurs when I(θ) =</b></p>
+                                  <input type="radio" id="ab" name="question7" value="a"> <label>1 </label><br>
+                                  <input type="radio" id="ab" name="question7" value="b"> <label> 0</label><br>
+                                  <input type="radio" id="ab" name="question7" value="c"> <label>Infinite</label> <br>
+                                  <input type="radio" id="ab" name="question7" value="d"> <label>None </label><br>
+                                  <div id="answer7" style="visibility: hidden;"> </div>
+                                  <p><b>8. The slit width a can be calculated as a = ______? where y = the distance between central maxima to the mth order minima point and D = distance between slit and photo diode (observed form instrument)</b></p>
+                                  <input type="radio" id="ab" name="question8" value="a"> <label>mD/y </label><br>
+                                  <input type="radio" id="ab" name="question8" value="b"> <label>my/D </label><br>
+                                  <input type="radio" id="ab" name="question8" value="c"> <label>mλD/y</label><br>
+                                  <input type="radio" id="ab" name="question8" value="d"> <label>mλy/D</label><br>
+                                  <div id="answer8" style="visibility: hidden;"> </div><br><br>
+                                 <input id="button1" type="button" value="Check Answers" onclick="compare()">
+                                  <input id="button" " type="button" value="Check Result" onclick="check()">
+                                </form>
                             </div>
                         </div><!--end of tab content-->
                 </div><!--end container-->
             </div><!--end of row-->
         </div><!--end of container-fluid-->
+
+        <br><br>
 
         <!----FOOTER --->
         <div class="footer container-fluid">
@@ -228,10 +285,110 @@
                     <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpC73hmoYHg55uyCz2Lti_w"></a>
                     <a class="fa fa-instagram" href="https://www.instagram.com/lnmiit/"></a>
                 </p>
+                <p id="imp_links">
+                    <a href="index.html">HOME</a> | <a href="about.html">ABOUT</a> | <a href="videos.html">VIDEOS</a> | <a href="contact.html">CONTACT</a>
+                </p>
                 <p id="copyright">Copyright © 2018 Department of Physics,LNMIIT. All Rights Reserved.</p>
-                <p id="developer">Developed by LUSIP1-2018 Team
-            </div>
-        </div>
+                <p id="developer">Developed by 
+
+                <!-- Trigger the modal with a button -->
+                <a href="#" style="color: grey" data-toggle="modal" data-target="#myModal">LUSIP1-2018 Team</a></p>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">LUSIP 01 - 2018-19 Team</h4><br>
+                        
+                        <div class="row"  align="center">
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/aashish.jpg" alt="Aashish">
+                                    <div class="caption">                        
+                                          <p><b>Aashish Raj Gupta</b></p>
+                                          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BqC7eQWhYQAeNlFzCUA75QA%3D%3D"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://www.github.com/aashish157"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ashish.raj.56232938"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/verma.jpg" alt="Abhishek" >
+                                    <div class="caption">                        
+                                          <p><b>Abhishek Verma</b></p>
+                                          
+                                          <a href="https://github.com/Abhishek4798"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100007181074572"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/anoop.jpeg" alt="Anoop" >
+                                    <div class="caption">                        
+                                          <p><b>Anoop Singh</b></p>
+                                          
+                                          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2FAnoop0204&h=AT2362spT8JK6MZz3Oqp6PVGkyl084pI1bt6fi_Ryy8IbBeu5S-s6Uf0gnN413zR_tQwOeJ1vAJf_KUFlv3kGBgMxvQ_iPUHaJHmtWJy5etSdtM5boSFnvc8TDY1-Q"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100013989409214"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/ateet.jpg" alt="Ateet">
+                                    <div class="caption">                        
+                                          <p><b>Ateet Tiwari</b></p>
+                                          <a href="https://www.linkedin.com/in/ateettiwari97/"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/ateett12ue"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ateet.tiwari.7"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-0"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/hritik.jpg" alt="Hritik">
+                                    <div class="caption">                        
+                                          <p><b>Hritik Dusad</b></p>
+                                          <a href="http://www.linkedin.com/in/hritik-dusad-565530133"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/hritikdusad"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/hritik.dusad.3"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                        </div>
+                      </div>
+                      
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div><!--end of row-->
+        </div><!--end of footer-->
 
     </body>
 </html>

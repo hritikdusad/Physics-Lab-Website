@@ -11,6 +11,9 @@
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="js/scroll_to_top.js"></script>
+        <script type="text/javascript" src="js/check/check1.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="path/to/sweet-alert.css" />
     </head>
 
     <body>
@@ -35,48 +38,43 @@
         </div> 
 
         <!--------HEADER---------->
-
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="row">                   
                     <ul class="nav navbar-nav">
                        <li><a href="index.html">HOME</a></li>
-                       <li><a href="#">ABOUT</a></li>
+                       <li><a href="about.html">ABOUT</a></li>
                        <li id="experiments" class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPERIMENTS <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-                                <li><a href="semiconductor.html">3. Band gap of semiconductor</a></li>
-                                <li><a href="refractive.html">4. Refractive index of glass with prism</a></li>
-                                <li><a href="rings.html">5. λ of Sodium light with Newton's Rings</a></li>
-                                <li><a href="coil.html">6. Helmholtz coil</a></li>
-                                <li><a href="induction.html">7. Electromagnetic Induction</a></li>
-                                <li><a href="waves.html">8. Mechanical waves</a></li>
-                                <li><a href="diffraction.html">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="grating.html">10. Diffraction grating</a></li>
+                                <li><a href="bar_pendulum.html" >2. Acc. due to gravity by bar pendulum</a></li>
+                                <li><a href="coil.html">3. Helmholtz coil</a></li>
+                                <li><a href="semiconductor.html">4. Measurement of band gap of semiconductor</a></li>
+                                <li><a href="refractive.html">5. Refractive index of glass with prism</a></li>
+                                <li><a href="rings.html">6. Wavelength of Sodium light with Newton's Rings</a></li>
+                                <li><a href="gyroscope.html">7. Gyroscope</a></li>
+                                <li><a href="induction.html">8. Electromagnetic Induction</a></li>
+                                <li><a href="waves.html">9. Mechanical waves</a></li>
+                                <li><a href="diffraction.html">10. Fraunhoffer Diffraction</a></li>
+                                <li><a href="grating.html">11. Diffraction grating</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">PEOPLE</a></li>
-                        <li><a href="#">FACILITIES</a></li>
-                        <li id="videos" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">VIDEOS<span class="caret"></span></a>
+                        <li id="people" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PEOPLE <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-                                <li><a href="semiconductor.html">3. Band gap of semiconductor</a></li>
-                                <li><a href="">4. Refractive index of glass with prism</a></li>
-                                <li><a href="">5. λ of Sodium light with Newton's Rings</a></li>
-                                <li><a href="">6. Helmholtz coil</a></li>
-                                <li><a href="">7. Electromagnetic Induction</a></li>
-                                <li><a href="">8. Mechanical waves</a></li>
-                                <li><a href="">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="">10. Diffraction grating</a></li>
+                                <li><a href="faculty.html">Faculty / Staff</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li id="facilities" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">FACILITIES <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="comp_facilities.html" >Research Computational Facilities</a></li>
+                                <li><a href="exp_facilities.html">Experimental Facilities</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="videos.html">VIDEOS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
-        </nav><!--end of nav bar-->
+        </nav>
 
 
         <div class="container-fluid">
@@ -203,7 +201,7 @@ determine the acceleration due to gravity in the laboratory.</p>
                               <p>1. Balance the bar on sharp wedge and mark the position of its center of gravity (C.G.).</p>
                               <p>2. Ensure that the frame on which movable knife edge / pivot is to be rested is hori-
 zontal.</p>
-                              <p align="center"><img src="resources/images/e1/bar_pendu.jpg"></p>
+                              <p align="center"><img src="resources/images/e1/bar_pendu.jpg" class="img-responsive"></p>
                               <p>3. Suspend the pendulum in the first hole. The knife edge or pivot should be placed
 on the glass plate as shown in Fig. 2.2.</p>
                               <p>4. The distance d is the distance between point of suspension (bottom of the hole) and
@@ -245,20 +243,83 @@ number of oscillations with an accurate stop watch.</p>
                             </div>
                             <div id="menu2" class="tab-pane fade">
                               <h3>VIDEO</h3>
-                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                              <p align="center"><iframe width="500vw" height="280vh" src="https://www.youtube-nocookie.com/embed/34VvJvlhvq0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p><br>
                             </div>
                             <div id="menu3" class="tab-pane fade">
                               <h3>RESOURCES</h3>
-                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                              <p><b>1. <a href="https://www.youtube.com/watch?v=x_t7x26vTRI" target="_blank"> 
+                              https://www.youtube.com/watch?v=x_t7x26vTRI</a><br><br>
+                                2. <a href="https://en.wikipedia.org/wiki/Pendulum" target="_blank">https://en.wikipedia.org/wiki/Pendulum</a><br><br>
+                                3. <a href="https://www.coursehero.com/file/p7f2mqq/A-bar-pendulum-with-holes-for-hanging-Wall-support-for-hanging-stop-clock-meter/" target="_blank">https://www.coursehero.com › FSU › PHY › PHY 2053</a><br><br>
+                                 4. Xue, Linwei (2007). <a href="http://www.mace.manchester.ac.uk/project/teaching/civil/structuralconcepts/Dynamics/pendulum/pendulum_con.php" target="_blank">"Pendulum Systems"</a>. Seeing and Touching Structural Concepts. Civil Engineering Dept., Univ. of Manchester, UK. Retrieved 2008-12-10.<br><br>
+                                 5. Nave, Carl R. (2006). <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/pend.html" target="_blank">"Simple pendulum"</a>. Hyperphysics. Georgia State Univ. Retrieved 2008-12-10.<br><br>6. 
+                                 <a href="https://www.scribd.com/document/24187365/Bar-Pendulum" target="_blank">https://www.scribd.com/document/24187365/Bar-Pendulum</a></b></p>
+
                             </div>
                             <div id="menu4" class="tab-pane fade">
                               <h3>VIVA VOCE</h3>
-                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                              <p id="quiz_heading">-Check Yourself-</p>
+                              
+                                <form id="quiz" name="quiz">
+                                  <p><b>1. What is the relation between g and G?</b></p>
+                                  <input type="radio" id="ab" name="question1" value="a"> <label> g=GM/R</label> <br>
+                                  <input type="radio" id="ab" name="question1" value="b"> <label> G=gR²/M</label><br>
+                                  <input type="radio" id="ab" name="question1" value="c"> <label> G=gM/R²</label><br>
+                                  <input type="radio" id="ab" name="question1" value="d"> <label> g=GM²/R</label><br>
+                                  <div id="answer1" style="visibility: hidden;"> </div>
+                                  <p><b>2. The value of g___</b></p>
+                                  <input type="radio" id="ab" name="question2" value="a"> <label> decreases with altitude.</label><br>
+                                  <input type="radio" id="ab" name="question2" value="b"> <label> decreases as we go below the surface of earth</label></label><br>
+                                  <input type="radio" id="ab" name="question2" value="c"> <label> greatest at poles and least at equator.</label><br>
+                                  <input type="radio" id="ab" name="question2" value="d"> <label> all of the above.</label><br> 
+                                  <div id="answer2" style="visibility: hidden;"> </div>
+                                  <p><b>3. A simple harmonic motion is the one where the force is proportional to</b></p>
+                                  <input type="radio" id="ab" name="question3" value="a"> <label> displacement </label><br>
+                                  <input type="radio" id="ab" name="question3" value="b"> <label> Velocity</label><br>
+                                  <input type="radio" id="ab" name="question3" value="c"> <label>acceleration</label><br>
+                                  <input type="radio" id="ab" name="question3" value="d"> <label> Both a & b</label><br>
+                                  <div id="answer3" style="visibility: hidden;"> </div>
+                                  <p><b>4. The motion of bar Pendulum is</b></p>
+                                  <input type="radio" id="ab" name="question4" value="a"> <label> Damped Oscillation </label><br>
+                                  <input type="radio" id="ab" name="question4" value="b"> <label> Simple Harmonic Motion</label><br>
+                                  <input type="radio" id="ab" name="question4" value="c"> <label> Simple Oscillation </label><br>
+                                  <input type="radio" id="ab" name="question4" value="d"> <label> None </label><br>
+                                  <div id="answer4" style="visibility: hidden;"> </div>
+                                  <p><b>5. The time period is given by , where L is the distance between  center of suspension and C.G</b></p>
+                                  <input type="radio" id="ab" name="question5" value="a"> <label> T=2π&radic;<sup> I</sup>&frasl;<sub>Mg</sub></label><br>
+                                  <input type="radio" id="ab" name="question5" value="b"> <label> T=<sup>1</sup>&frasl;<sub>2π</sub><span>&radic;</span><sup> I</sup>&frasl;<sub>MgL</sub></label><br>
+                                  <input type="radio" id="ab" name="question5" value="c"> <label> T=2π<span>&radic;</span><sup> I</sup>&frasl;<sub>MgL</sub> </label><br>
+                                  <input type="radio" id="ab" name="question5" value="d"> <label> T=2π<span>&radic;</span><sup> MgL</sup>&frasl;<sub>I</sub> </label><br>
+                                  <div id="answer5" style="visibility: hidden;"> </div>
+                                  <p><b>6. Time period T will have minimum value when L (k is the radius of gyration and L is the distance between  center of suspension and C.G)</b></p>
+                                  <input type="radio" id="ab" name="question6" value="a"> <label> L>>k </label><br>
+                                  <input type="radio" id="ab" name="question6" value="b"> <label> L&#60;&#60;k</label> <br>
+                                  <input type="radio" id="ab" name="question6" value="c"> <label> L=k</label> <br>
+                                  <input type="radio" id="ab" name="question6" value="d"> <label> L=2k</label><br>
+                                  <div id="answer6" style="visibility: hidden;"> </div>
+                                  <p><b>7. The value of k from the graph(Fig 2)</b></p>
+                                  <img src="resources/images/viva images/barpendulum grph1.jpg"><br>
+                                  <input type="radio" id="ab" name="question7" value="a"> <label> PR</label> <br>
+                                  <input type="radio" id="ab" name="question7" value="b"> <label> QR </label><br>
+                                  <input type="radio" id="ab" name="question7" value="c"> <label> BD </label><br>
+                                  <input type="radio" id="ab" name="question7" value="d"> <label> AE</label> <br>
+                                  <div id="answer7" style="visibility: hidden;">Correct Answer is B</div>
+                                  <p><b>8. The bar oscillate in vertical plane with</b></p>
+                                  <input type="radio" id="ab" name="question8" value="a"> <label>Very large amplitude(40°-50°) </label><br>
+                                  <input type="radio" id="ab" name="question8" value="b"> <label> Medium amplitude(20°-30°) </label><br>
+                                  <input type="radio" id="ab" name="question8" value="c"> <label> Small amplitude(10°-15°) </label><br>
+                                  <input type="radio" id="ab" name="question8" value="d"> <label> Very small amplitude(4°-5°) </label><br>
+                                  <div id="answer8" style="visibility: hidden;"> </div><br><br>
+                                  <input id="button1" type="button" value="Check Answers" onclick="compare()">
+                                  <input id="button" " type="button" value="Check Result" onclick="check()">
+                                </form>
                             </div>
-                        </div><!--end of tab content-->
+                    </div><!--end of tab content-->
                 </div><!--end container-->
             </div><!--end of row-->
         </div><!--end of container-fluid-->
+
+        <br><br>
 
         <!----FOOTER --->
         <div class="footer container-fluid">
@@ -270,10 +331,113 @@ number of oscillations with an accurate stop watch.</p>
                     <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpC73hmoYHg55uyCz2Lti_w"></a>
                     <a class="fa fa-instagram" href="https://www.instagram.com/lnmiit/"></a>
                 </p>
+                <p id="imp_links">
+                    <a href="index.html">HOME</a> | <a href="about.html">ABOUT</a> | <a href="videos.html">VIDEOS</a> | <a href="contact.html">CONTACT</a>
+                </p>
                 <p id="copyright">Copyright © 2018 Department of Physics,LNMIIT. All Rights Reserved.</p>
-                <p id="developer">Developed by LUSIP1-2018 Team
-            </div>
-        </div>
+                <p id="developer">Developed by 
+
+                <!-- Trigger the modal with a button -->
+                <a href="#" style="color: grey" data-toggle="modal" data-target="#myModal">LUSIP1-2018 Team</a></p>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">LUSIP 01 - 2018-19 Team</h4><br>
+                        
+                        <div class="row"  align="center">
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/aashish.jpg" alt="Aashish">
+                                    <div class="caption">                        
+                                          <p><b>Aashish Raj Gupta</b></p>
+                                          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BqC7eQWhYQAeNlFzCUA75QA%3D%3D"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://www.github.com/aashish157"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ashish.raj.56232938"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/verma.jpg" alt="Abhishek" >
+                                    <div class="caption">                        
+                                          <p><b>Abhishek Verma</b></p>
+                                          
+                                          <a href="https://github.com/Abhishek4798"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100007181074572"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/anoop.jpeg" alt="Anoop" >
+                                    <div class="caption">                        
+                                          <p><b>Anoop Singh</b></p>
+                                          
+                                          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2FAnoop0204&h=AT2362spT8JK6MZz3Oqp6PVGkyl084pI1bt6fi_Ryy8IbBeu5S-s6Uf0gnN413zR_tQwOeJ1vAJf_KUFlv3kGBgMxvQ_iPUHaJHmtWJy5etSdtM5boSFnvc8TDY1-Q"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100013989409214"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/ateet.jpg" alt="Ateet">
+                                    <div class="caption">                        
+                                          <p><b>Ateet Tiwari</b></p>
+                                          <a href="https://www.linkedin.com/in/ateettiwari97/"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/ateett12ue"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ateet.tiwari.7"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-0"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/hritik.jpg" alt="Hritik">
+                                    <div class="caption">                        
+                                          <p><b>Hritik Dusad</b></p>
+                                          <a href="http://www.linkedin.com/in/hritik-dusad-565530133"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/hritikdusad"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/hritik.dusad.3"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        
+                        
+                    </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div><!--end of row-->
+        </div><!--end of footer-->
 
     </body>
 </html>

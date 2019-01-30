@@ -11,6 +11,9 @@
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="js/scroll_to_top.js"></script>
+        <script type="text/javascript" src="js/check/check10.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="path/to/sweet-alert.css" />
     </head>
 
     <body>
@@ -35,48 +38,43 @@
         </div> 
 
         <!--------HEADER---------->
-
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="row">                   
                     <ul class="nav navbar-nav">
                        <li><a href="index.html">HOME</a></li>
-                       <li><a href="#">ABOUT</a></li>
+                       <li><a href="about.html">ABOUT</a></li>
                        <li id="experiments" class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPERIMENTS <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-                                <li><a href="semiconductor.html">3. Measurement of band gap of semiconductor</a></li>
-                                <li><a href="refractive.html">4. Refractive index of glass with prism</a></li>
-                                <li><a href="rings.html">5. Wavelength of Sodium light with Newton's Rings</a></li>
-                                <li><a href="coil.html">6. Helmholtz coil</a></li>
-                                <li><a href="induction.html">7. Electromagnetic Induction</a></li>
-                                <li><a href="waves.html">8. Mechanical waves</a></li>
-                                <li><a href="diffraction.html">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="grating.html">10. Diffraction grating</a></li>
+                                <li><a href="bar_pendulum.html" >2. Acc. due to gravity by bar pendulum</a></li>
+                                <li><a href="coil.html">3. Helmholtz coil</a></li>
+                                <li><a href="semiconductor.html">4. Measurement of band gap of semiconductor</a></li>
+                                <li><a href="refractive.html">5. Refractive index of glass with prism</a></li>
+                                <li><a href="rings.html">6. Wavelength of Sodium light with Newton's Rings</a></li>
+                                <li><a href="gyroscope.html">7. Gyroscope</a></li>
+                                <li><a href="induction.html">8. Electromagnetic Induction</a></li>
+                                <li><a href="waves.html">9. Mechanical waves</a></li>
+                                <li><a href="diffraction.html">10. Fraunhoffer Diffraction</a></li>
+                                <li><a href="grating.html">11. Diffraction grating</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">PEOPLE</a></li>
-                        <li><a href="#">FACILITIES</a></li>
-                        <li id="videos" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">VIDEOS<span class="caret"></span></a>
+                        <li id="people" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PEOPLE <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="bar_pendulum.html" >1. Acc. due to gravity by bar pendulum</a></li>
-                                <li><a href="electron.html">2. e/m of electron by Thomson method</a></li>
-                                <li><a href="semiconductor.html">3. Band gap of semiconductor</a></li>
-                                <li><a href="">4. Refractive index of glass with prism</a></li>
-                                <li><a href="">5. λ of Sodium light with Newton's Rings</a></li>
-                                <li><a href="">6. Helmholtz coil</a></li>
-                                <li><a href="">7. Electromagnetic Induction</a></li>
-                                <li><a href="">8. Mechanical waves</a></li>
-                                <li><a href="">9. Fraunhoffer Diffraction</a></li>
-                                <li><a href="">10. Diffraction grating</a></li>
+                                <li><a href="faculty.html">Faculty / Staff</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li id="facilities" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">FACILITIES <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="comp_facilities.html" >Research Computational Facilities</a></li>
+                                <li><a href="exp_facilities.html">Experimental Facilities</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="videos.html">VIDEOS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
-        </nav><!--end of nav bar-->
+        </nav>
 
 
         <div class="container-fluid">
@@ -139,9 +137,9 @@
                                 <p>Whenever the difference in path length between the light passing through different slits
                                     is an integral number of wavelengths of the incident light, the light from each of these slits will be in phase, and then it will form an image at the specified location. Mathematically,
                                     the relation is simple</p>(11.1)
-                                    <p align="center"><img src="resources/images/e10/10.1.jpg"></p>
+                                    <p align="center"><img src="resources/images/e10/10.1.jpg" style="width: 50%;"></p>
                                 <p>Eq. (11.1) is known as grating equation. The light that corresponds to direct transmission</p>
-                                <p align="center"><img src="resources/images/e10/10.2.jpg"></p>
+                                <p align="center"><img src="resources/images/e10/10.2.jpg" style="width: 20%;"></p>
                                 <p>(or specular reflection in the case of a reflection grating) is called the zero order, and is
                                     denoted m = 0. The other maxima occur at angles which are represented by non-zero
                                     integers m. Note that m can be positive or negative, resulting in diffracted orders on both
@@ -168,7 +166,7 @@
                               <p>As with many optical instruments, the spectroscope requires some initial adjustments
                                     before the desired measurements can be performed. Focusing and levelling of the spectrometer
                                     for the parallel rays is to be done as per previous prism experiment.</p>
-                                <p><img src="resources/images/e10/10.3.jpg"></p>
+                                <p align="center"><img src="resources/images/e10/10.3.jpg" style="width: 40%;"></p>
                                 <p align="center"> Figure 11.3: Grating settings</p>
                                 <p><b>To set the telescope axis perpendicular to that of the collimator:</b></p>
                               <p>Illuminate the slit with the light source. Turn the telescope of the spectrometer to view the
@@ -199,7 +197,7 @@
                                     to the table surface, the rulings of the grating may not be vertical. In order to
                                     set the rulings vertical, rotate the telescope in its own plane on both side of the central
                                     image. On both sides on the central image different orders of image are seen as shown in Fig. 11.4. In the first order images on both sides, if the image on the left is higher than</p>
-                                <p align="center"><img src="resources/images/e10/10.4.jpg"></p>
+                                <p align="center"><img src="resources/images/e10/10.4.jpg" style="width: 40%"></p>
                                 <p align="center"> Figure 11.4: Grating images of higher order</p>
                                 <p>that of the image on the right or vice-versa, then turn the third screw A on the prism
                                     table until the images on both the sides are on the same level.</p>
@@ -226,7 +224,7 @@
                                 <p>1. Use the grating equation with d = (1/6000) cm to find the wavelength  for each
                                     colour.</p>
                                 <p>2. Calculate % error for your reported λ measurement.</p>
-                                <p align="center"><img src="resources/images/e10/10.5.jpg"></p>
+                                <p align="center"><img src="resources/images/e10/10.5.jpg" style="width: 50%;"></p>
                                 <p align="center">Table 11.1: For first order (m = 1). CSR - Circular scale reading, VSR - Vernier  
                                     scale reading.</p>
 
@@ -245,20 +243,80 @@
 
                             <div id="menu2" class="tab-pane fade">
                               <h3>VIDEO</h3>
-                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                              <p align="center" style="height: 200px">CURRENTLY NOT AVAILABLE
+                              <br>
+                              <img src="resources/images/sad_emoji.png" style="height: 100px"></p>
                             </div>
                             <div id="menu3" class="tab-pane fade">
                               <h3>RESOURCES</h3>
-                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                              <p><b>1. <a href="https://en.wikipedia.org/wiki/Diffraction_grating" target="_blank">Diffraction grating</a><br><br>
+                                2. <a href="https://www.youtube.com/watch?v=TlkVtpzPTdU" target="_blank">https://www.youtube.com/watch?v=TlkVtpzPTdU</a><br><br>
+                                3. <a href="https://www.education.com/science-fair/article/measure-size-light-wave/" target="_blank">https://www.education.com/science-fair/article/measure-size-light-wave/</a><br><br>
+                                4. Thomas D. Cope (1932) <a href="https://books.google.co.in/books?id=epgvIYkMiUIC&pg=PA377&redir_esc=y#v=onepage&q&f=false" target="_blank">The Rittenhouse diffraction grating"</a>. Reprinted in: Rittenhouse, David (1980). Hindle, Brooke, ed. The Scientific Writings of David Rittenhouse. Arno Press. pp. 377–382. (A reproduction of Rittenhouse's letter re his diffraction grating appears on pp. 369–374.)</b></p>
                             </div>
                             <div id="menu4" class="tab-pane fade">
                               <h3>VIVA VOCE</h3>
-                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                              <p id="quiz_heading">-Check Yourself-</p>
+                              
+                                <form id="quiz" name="quiz">
+                                  <p><b>1. Interference refers to the interaction of two or more wave trains of light having the ________ with time.</b></p>
+                                  <input type="radio" id="ab" name="question1" value="a"> <label>Same frequency or having a phase difference which remains constant</label><br>
+                                  <input type="radio" id="ab" name="question1" value="b"> <label> Same frequency and having a phase difference which remains constant</label><br>
+                                  <input type="radio" id="ab" name="question1" value="c"> <label>Different frequency or having a phase difference which remains constant</label><br>
+                                  <input type="radio" id="ab" name="question1" value="d"> <label>Different frequency and having a phase difference which remains constant</label><br>
+                                  <div id="answer1" style="visibility: hidden;"> </div>
+                                  <p><b>2. The wave fronts are perpendicular and parallel to the rays and to the grating respectively</b></p>
+                                  <input type="radio" id="ab" name="question2" value="a"> <label>Perpendicular and Parallel</label><br>
+                                  <input type="radio" id="ab" name="question2" value="b"> <label>Perpendicular and Perpendicular</label><br>
+                                  <input type="radio" id="ab" name="question2" value="c"> <label>Parallel and Perpendicular</label><br>
+                                  <input type="radio" id="ab" name="question2" value="d"><label> Parallel and Parallel</label><br>
+                                  <div id="answer2" style="visibility: hidden;"> </div>
+                                  <p><b>3. Expression for the resolving power of the diffraction grating _______.Here λ is the average of wavelength, Δλ is the difference between wavelengths, m is the order and N is the total number of slits on the grating</b></p>
+                                  <input type="radio" id="ab" name="question3" value="a"> <label>R =λ/Δλ </label><br>
+                                  <input type="radio" id="ab" name="question3" value="b"> <label>R = mλ</label><br>
+                                  <input type="radio" id="ab" name="question3" value="c"> <label>R = mN</label><br>
+                                  <input type="radio" id="ab" name="question3" value="d"> <label>1 and 3 both</label><br>
+                                  <div id="answer3" style="visibility: hidden;"> </div>
+                                  <p><b>4. The distance between maxima depends on the</b></p>
+                                  <input type="radio" id="ab" name="question4" value="a"> <label>Distance between slits and the resolution </label><br>
+                                  <input type="radio" id="ab" name="question4" value="b"> <label>The relative sharpness of the maxima</label><br>
+                                  <input type="radio" id="ab" name="question4" value="c"> <label>Depends on the total number of slits </label><br>
+                                  <input type="radio" id="ab" name="question4" value="d"> <label>All of the above</label> <br>
+                                  <div id="answer4" style="visibility: hidden;"> </div>
+                                  <p><b>5. Collimeter and telescope are at</b></p>
+                                  <input type="radio" id="ab" name="question5" value="a"> <label>45&deg;</label><br>
+                                  <input type="radio" id="ab" name="question5" value="b"> <label>90&deg;</label><br>
+                                  <input type="radio" id="ab" name="question5" value="c"> <label>180&deg; </label><br>
+                                  <input type="radio" id="ab" name="question5" value="d"> <label>None </label><br>
+                                  <div id="answer5" style="visibility: hidden;"> </div>
+                                  <p><b>6. The source should be _________such that maximum light falls on the slit</b></p>
+                                  <input type="radio" id="ab" name="question6" value="a"> <label>In front of the slide</label><br>
+                                  <input type="radio" id="ab" name="question6" value="b"> <label>Perpendicular</label><br>
+                                  <input type="radio" id="ab" name="question6" value="c"> <label>At 45 &deg;</label><br>
+                                  <input type="radio" id="ab" name="question6" value="d"> <label>None </label><br>
+                                  <div id="answer6" style="visibility: hidden;"> </div>
+                                  <p><b>7. Grating(G) is fixed in the grating holder such that the grating lines are ______to the prism table</b></p>                                
+                                  <input type="radio" id="ab" name="question7" value="a"> <label>Perpendicular </label><br>
+                                  <input type="radio" id="ab" name="question7" value="b"> <label>Parallel</label> <br>
+                                  <input type="radio" id="ab" name="question7" value="c"> <label>At 45 degrees</label> <br>
+                                  <input type="radio" id="ab" name="question7" value="d"> <label>None of the above </label><br>
+                                  <div id="answer7" style="visibility: hidden;"> </div>
+                                  <p><b>8. Light is allowed to be reflected by both the grating surface and view the corresponding image via the telescope.</b></p>
+                                  <input type="radio" id="ab" name="question8" value="a"> <label>One at a time </label><br>
+                                  <input type="radio" id="ab" name="question8" value="b"> <label>Both at a time</label><br>
+                                  <input type="radio" id="ab" name="question8" value="c"> <label>Light is not allowed to reflect through both grating surfaces amplitude(10°-15°)</label> <br>
+                                  <input type="radio" id="ab" name="question8" value="d"> <label>Neither of them is correct</label><br>
+                                  <div id="answer8" style="visibility: hidden;"> </div><br><br>
+                                  <input id="button1" type="button" value="Check Answers" onclick="compare()">
+                                  <input id="button" " type="button" value="Check Result" onclick="check()">
+                                </form>
                             </div>
                         </div><!--end of tab content-->
                 </div><!--end container-->
             </div><!--end of row-->
         </div><!--end of container-fluid-->
+
+        <br><br>
 
         <!----FOOTER --->
         <div class="footer container-fluid">
@@ -270,11 +328,110 @@
                     <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpC73hmoYHg55uyCz2Lti_w"></a>
                     <a class="fa fa-instagram" href="https://www.instagram.com/lnmiit/"></a>
                 </p>
+                <p id="imp_links">
+                    <a href="index.html">HOME</a> | <a href="about.html">ABOUT</a> | <a href="videos.html">VIDEOS</a> | <a href="contact.html">CONTACT</a>
+                </p>
                 <p id="copyright">Copyright © 2018 Department of Physics,LNMIIT. All Rights Reserved.</p>
-                <p id="developer">Developed by LUSIP1-2018 Team
-            </div>
-        </div>
+                <p id="developer">Developed by 
 
+                <!-- Trigger the modal with a button -->
+                <a href="#" style="color: grey" data-toggle="modal" data-target="#myModal">LUSIP1-2018 Team</a></p>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">LUSIP 01 - 2018-19 Team</h4><br>
+                        
+                        <div class="row"  align="center">
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/aashish.jpg" alt="Aashish">
+                                    <div class="caption">                        
+                                          <p><b>Aashish Raj Gupta</b></p>
+                                          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BqC7eQWhYQAeNlFzCUA75QA%3D%3D"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://www.github.com/aashish157"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ashish.raj.56232938"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/verma.jpg" alt="Abhishek" >
+                                    <div class="caption">                        
+                                          <p><b>Abhishek Verma</b></p>
+                                          
+                                          <a href="https://github.com/Abhishek4798"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100007181074572"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="thumbnail">
+                                  
+                                    <img src="resources/images/dev team/anoop.jpeg" alt="Anoop" >
+                                    <div class="caption">                        
+                                          <p><b>Anoop Singh</b></p>
+                                          
+                                          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2FAnoop0204&h=AT2362spT8JK6MZz3Oqp6PVGkyl084pI1bt6fi_Ryy8IbBeu5S-s6Uf0gnN413zR_tQwOeJ1vAJf_KUFlv3kGBgMxvQ_iPUHaJHmtWJy5etSdtM5boSFnvc8TDY1-Q"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/profile.php?id=100013989409214"></i></a> 
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/ateet.jpg" alt="Ateet">
+                                    <div class="caption">                        
+                                          <p><b>Ateet Tiwari</b></p>
+                                          <a href="https://www.linkedin.com/in/ateettiwari97/"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/ateett12ue"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/ateet.tiwari.7"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-0"></div>
+                                <div class="col-md-4">
+                                    <div class="thumbnail">
+                                  
+                                        <img src="resources/images/dev team/hritik.jpg" alt="Hritik">
+                                    <div class="caption">                        
+                                          <p><b>Hritik Dusad</b></p>
+                                          <a href="http://www.linkedin.com/in/hritik-dusad-565530133"><i class="fa fa-linkedin"></i></a>
+                                          <a href="https://github.com/hritikdusad"><i class="fa fa-github"></i></a>
+                                          <a href="https://www.facebook.com/hritik.dusad.3"><i class="fa fa-facebook"></i></a> 
+                                    </div>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                        </div>
+                      </div>
+                      
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div><!--end of row-->
+        </div><!--end of footer-->
     </body>
 </html>
 
